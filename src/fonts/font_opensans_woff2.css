@@ -1,0 +1,53 @@
+/*
+Файл для отдельной подгрузки WOFF2-версии файла JS-ом.
+Будет обработан при сборке: в url() будет подставлена base64 кодированная версия указанного файла
+*/
+
+@font-face {
+  font-family: 'Open Sans_my';
+  src: url('opensans.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans_my';
+  src: url('opensans_bold.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* font-family: "CocaColaRegular"; */
+@font-face {
+    font-family: "CocaColaRegular";
+    src: url("CocaColaRegular.woff") format("woff");
+    /*src: url("CocaColaRegular.eot?#iefix")format("embedded-opentype"),
+    url("CocaColaRegular.woff") format("woff"),
+    url("CocaColaRegular.ttf") format("truetype");*/
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "CleanvertisingLight"; */
+@font-face {
+    font-family: "CleanvertisingLight";
+    src: url("fonts/CleanvertisingLight.woff") format("woff");
+    /*
+    src: url("fonts/CleanvertisingLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/CleanvertisingLight.woff") format("woff"),
+    url("fonts/CleanvertisingLight.ttf") format("truetype");*/
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "CleanvertisingBlack"; */
+@font-face {
+    font-family: "CleanvertisingBlack";
+    src: url("fonts/CleanvertisingBlack.woff") format("woff");
+    /*
+    src: url("fonts/CleanvertisingBlack.eot?#iefix")format("embedded-opentype"),
+    url("fonts/CleanvertisingBlack.woff") format("woff"),
+    url("fonts/CleanvertisingBlack.ttf") format("truetype");*/
+    font-style: normal;
+    font-weight: normal;
+}

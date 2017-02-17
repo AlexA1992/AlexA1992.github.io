@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="yes">
+        <title>form</title>
+        <link rel="shortcut icon" href=
+              'src/img/favicon.ico' type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
+        <link rel="stylesheet" href="build/css/style.css">
+        <link rel="stylesheet" href='src/fonts.css'>
+        <link rel="stylesheet" href='src/jquery-ui.min.css'>
+        <link rel="stylesheet" href='slick-1.6.0/slick/slick-theme.css'>
+        <link rel="stylesheet" href='font-awesome-4.7.0/css/font-awesome.min.css'>
+    </head>
+    <body>
+        <sextion class="header">
+            <div class="logo-info">
+                <div class="logo-inner">
+                    <p class="logo-name">aDOORable</p>
+                    <div onclick="window.location.href='index.html'" class="blick1"></div>
+                </div>
+                <h1 class="logo-text">we make <span class='logo-span'>not only</span> doors</h1>
+            </div>
+            <div id='string'>
+                <marquee class="string-line">
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>please fill the form below<i class="fa fa-caret-down" aria-hidden="true"></i>
+                </marquee>
+            </div>
+        </sextion>
+
+        <section class="main-content">
+            <div class="form">
+
+                <form id="formMessage" method="post" action="mailmessage.php" name="formMessage">
+                    <label><input id='name' name="name" type="text" autofocus maxlength="30" placeholder="Your name..."></label>
+
+                    <label><input id='email' name="email" type="text" maxlength="50" placeholder="Your e-mail..."></label>
+
+                    <label><textarea name="textArea" cols="20" rows="10" wrap="virtual" maxlength="1000" placeholder="Your message..." id="textArea"></textarea></label>
+
+                    <input name ='sendMail' id="submit" type="submit" value="send it " >
+                </form>
+            </div>
+            <p title='Oops!' id="nameError">Please enter your name</p>
+            <p title='Oops!' id="emailError">Please enter your e-mail</p>
+            <p title='Oops!' id="emailError1">Please enter a correct e-mail</p>
+            <p title='Oops!' id="textAreaError">Please print your message</p>
+        </section>
+
+         <section class="footer">
+            <div class="footer-large">
+                <div class="aboutUs">
+                    <p>   
+                        <a href="#" class="aboutUs-text usual">
+                            <i class="fa fa-book" aria-hidden="true"></i>About us
+                        </a>
+                    </p>
+                </div>
+                <p class='footer__vertical'>&brvbar;</p>
+                <div class="ContactUs">
+                    <p>   
+                        <a href="#" class="ContactUs-text usual">
+                            <i class="fa fa-phone" aria-hidden="true"></i>Contact us
+                        </a>
+                    </p>
+                </div>
+                <p class='footer__vertical'>&brvbar;</p>
+                <div class="sendEmail">
+                    <p>   
+                        <a href="message_form.html" class="aboutUs-text usual">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>Send a Message
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-min">
+                <i id='burger' class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+
+            <!--это типа окно About Us DIALOG()-->
+            <div title='About us' id='aboutUs'>
+                <p class="abouUs-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nam quibusdam numquam, tenetur animi sunt iste soluta vitae atque, porro et officiis ipsam, enim a inventore itaque at necessitatibus aperiam!</p>
+            </div>
+
+            <!--это типа окно Contact Us DIALOG()-->
+            <div title='Contact us' id="contactUs">
+                <p class='address-text'><span>Address:<br></span>Russian Federation, Saint-Petersburg, Avtovskaya street, 10</p>
+                <p class="email-inner"><span>
+                    E-mail:<br></span>adoorable@gmail.com</p>
+                <p class="phone-inner"><span>Phone number in Russia:<br></span>+7-10-812-000-00-00</p>
+            </div>
+            
+        
+            <!-- это сообщение об отправке формы-->
+            <div id="thankMessage">
+                <p class="thank-text">Your message has been sent successfully.</p><br>
+                <p class="thank-text">We will reply to your e-mail as soon as possible.</p><br>
+                <p class="thank-text">Thank you for your message &hearts;</p>
+            </div>
+        </section>
+
+        <script src='src/js/jquery-3.1.0.min.js'></script>
+        <script src="src/js/NJSform.js"></script>
+        <script src="src/js/scriptForm.js"></script>
+        <script src="src/js/jquery-ui.min.js"></script>
+
+    </body>
+</html>

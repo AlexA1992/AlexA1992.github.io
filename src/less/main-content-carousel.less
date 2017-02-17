@@ -1,0 +1,52 @@
+.carousel {
+    max-width:95%;
+    box-sizing:border-box;
+    //height: 50%;
+    border-radius:5px ;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 10px grey;
+    padding: 15px 10px 10px 5px;
+    @media screen and (min-width:768px){
+        box-sizing:border-box;
+        max-width:50%;
+        //height: 65%;
+        border-radius:5px ;
+        box-shadow: 0 0 10px grey;
+        
+    }
+    .Bigslide{
+        
+        .img{
+            
+            @media screen and (min-width:481px){
+                
+            }
+            img{
+                margin: 0 auto;
+                width:200px;
+                height:200px;
+                @media screen and (min-width:481px){
+                    
+                }
+            }
+        }
+    }
+    .Smallslide{
+        padding-top: 10px;
+        //padding-right: 30px;
+        .img{
+            
+            img{
+                max-width:50px;
+                max-height:50px;
+                
+            }
+        }
+    }
+}

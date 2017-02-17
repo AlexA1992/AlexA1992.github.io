@@ -1,0 +1,106 @@
+* {
+    margin:0;
+    padding: 0;
+    &::after{
+        margin:0;
+    }
+    &::before{
+        margin:0;
+    }
+}
+body {
+    width: 100%;
+    min-width:320px;
+    max-width: 1200px;
+    min-height: 100vh;
+    box-sizing:border-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: @font-family;
+    color: @text-color;
+    padding:1px;
+
+    @media screen and (min-width:481px){
+        padding:2px;
+    }
+
+    .header {
+        box-sizing:border-box;
+        background: linear-gradient(to bottom, #b4d3d6, #94abad);
+        padding-bottom:5px;
+        @media screen and (min-width:481px){
+            padding-bottom:8px;
+        }
+    }
+    .main-content {
+        height:100%;
+        padding-top:5px;
+        padding-bottom:5px;
+        box-sizing:border-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-flex;
+        display: -ms-inline-flex;
+        display: -o-inline-flex;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 1;
+        @media screen and (min-width:481px){
+            padding-top:20px;
+            padding-bottom:10px;
+        }
+        .accordion-string {
+            display: none;
+            box-sizing: border-box;
+            line-height:25px;
+            box-sizing: border-box;
+            width:100%;
+            height:25px;
+            background: linear-gradient(to bottom, #909090 0%, #303030 50%, #909090 100%);
+            margin-top:3px;
+            margin-bottom:3px;
+            .accordion-string-line {
+                line-height: 25px;
+                font-family: "CleanvertisingLight";
+                font-weight: 600;
+                color:aliceblue;
+                font-size:0.85em;
+                animation-duration: 5s;
+                -webkit-animation-duration:5s;
+                font-style: italic;
+                .fa-arrow-circle-down{
+                    color:aliceblue;
+                    position: relative;
+                    top:0px;
+                    animation-duration: 1.5s;
+                    -webkit-animation-duration:1.5s;
+                    animation-name:accordionUpDown;
+                    -webkit-animation-name:accordionUpDown;
+                    animation-play-state:running;
+                    -webkit-animation-play-state:running;
+                    animation-iteration-count:infinite;
+                    -webkit-animation-iteration-count:infinite;
+                    animation-direction:alternate;
+                    -webkit-animation-direction:alternate;
+                }
+            }
+        }
+    }
+    .footer {
+        box-sizing:border-box;
+        height:30px;
+        background: linear-gradient(to bottom, #202020, #505050);
+        display: -webkit-inline-flex;
+        display: -moz-inline-flex;
+        display: -ms-inline-flex;
+        display: -o-inline-flex;
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+}

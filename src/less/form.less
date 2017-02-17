@@ -1,0 +1,104 @@
+.form {
+    max-width:95%;
+    margin:0 auto;
+    //height:80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to bottom, white 0%,  #c5f1c5 100%);
+    align-self: center;
+@media screen and (min-width:481px){
+            padding: 10px 5px 15px 10px;
+        }
+    #formMessage {
+        //max-height:95%;
+        display: block;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #name{
+        background-color:white;
+        color:#0e2a0e;
+        font-family:arial;
+        font-size:12px;
+        font-style:italic;
+        border: 1px solid green;
+        //border-color:aquamarine;
+        display: block; 
+        margin-bottom:15px;
+        padding: 5px;
+        font-style: italic;
+    }
+    #email{
+        background-color:white;
+        color:#0e2a0e;
+        font-family:arial;
+        font-size:12px;
+        font-style:italic;
+        border: 1px solid green;
+        display: block;
+        padding: 5px;
+        margin-bottom:15px;
+        font-style: italic;
+    }
+    #textArea {
+        background-color:white;
+        color:white;
+        font-family:arial;
+        font-size:12px;
+        font-style:italic;
+        border: 1px solid green;
+        display: block;
+        padding: 5px;
+        margin-bottom:5px;
+        font-style: italic;
+    }
+    #submit {
+        border: 1px solid green;
+        display: block;
+        margin: 0 auto;
+        //margin-top: 20px;
+        border-radius: 15px 5px;
+        background:linear-gradient(to bottom, #769c8c 0%,  green 50%, #769c8c 100%);
+        box-shadow: 5px -5px 5px #0f422d;
+        color: #0f422d;
+        width:130px;
+        height:35px;
+        font-family: "CleanvertisingLight";
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 500;
+        text-align: center;
+        background-image: linear-gradient(to left,transparent,transparent 1%,#1c6348 90%,#1c6348);
+        background-position: 99% 0;
+        background-size: 199% 99%;
+        transition: all .3s ease-in;
+        border: 1px solid #0f422d;
+        &:hover{
+            background-position: 0 0;
+            color:#fff;
+            cursor: pointer;
+        }
+        @media screen and (min-width:481px){
+            margin-top: 5px;
+        }
+    }
+}
+#nameError, #emailError, #emailError1, #textAreaError{
+    display: none;
+    font-family: "CleanvertisingLight";
+}
+
+#thankMessage {
+    display: none;
+    .thank-text {
+        text-align: left;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,103 @@
+.accordion{
+
+    .accord-heading {
+        padding: 5px 5px 5px 5px!important;
+        color:#164a40;
+        background:   linear-gradient(to bottom,  white 0%,  #909090 100%);
+        border-color: #b2ecef;
+        &:hover{
+            color:aliceblue;
+            background:   linear-gradient(to bottom, #909090 0%,  #202020 100%);
+        }
+    }
+    .accord-inner {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        padding:5px!important;
+        background:   white;
+        img {
+            width:100px;
+            height:150px;
+            align-self: center;
+        }
+        .accord-text {
+            padding-left: 3px;
+            color:#164a40;
+        }
+        .accord-button{
+            display: none;
+            @media screen and (min-width:481px){
+                display: block;
+                box-sizing: border-box;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius:5px;
+                padding: 2px;
+            }
+            .accord-btn-inner{
+
+                box-sizing: border-box;
+                width:70px;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color:orange;
+                display: none;
+                .accord-btn-text-upper{
+                    text-transform: lowercase;
+                    text-align: center;
+                } 
+                .accord-btn-text-lower{
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+
+            .accord-btn-icon{
+                //z-index: 10;
+                display: block;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                width: 50px;
+                height: 50px;
+                border-radius:50% 50%;
+                background:radial-gradient(at center, orangered, yellow);
+                cursor:pointer;
+                &:hover{
+                    background:radial-gradient(at center, darkgreen, lightgreen);
+                    box-shadow: 0 0 15px darkgreen;
+                }
+                .fa-check{
+                    color:white;
+                    align-self:center;
+
+                }
+            }
+        }
+    }
+}
+
+.ui-accordion-header-active, .ui-state-active, .ui-state-highlight, .ui-state-focus {
+    padding: 5px 5px 5px 5px!important;
+    color:#093927;
+    background:   linear-gradient(to bottom, #c5f1c5 0%,  #94abad 80%)!important;
+    border-color:#35969b!important;
+}

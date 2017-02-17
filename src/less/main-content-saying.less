@@ -1,0 +1,47 @@
+.main-content__saying {
+    display: none;
+    @media screen and (min-width:768px){
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        
+        box-sizing:border-box;
+        border-radius:5px ;
+        padding:5px;
+        max-width:20%;
+        height: 35%;
+        text-align: justify;
+        box-shadow: 0 0 10px grey; 
+        
+    }
+    p {
+        font-size: @main-content-saying;
+        font-family:"CleanvertisingLight"; 
+    }
+    .em {
+        //flex-shrink: 1;
+        font-size: @main-content-saying-em;
+        //position: relative;
+        width:48%;
+        //display: inline-block;
+        //margin-left:50%;
+        text-align: right;
+        //padding-top: 9px;
+        //padding-bottom: 15px;
+        font-style: italic;
+        margin: 10px 0 0 50%;
+
+    }
+}
+/*
+.clear:after {
+content: "&nbsp;";
+display: block;
+clear: both;
+visibility: hidden;
+height: 0;
+line-height: 0;
+}*/

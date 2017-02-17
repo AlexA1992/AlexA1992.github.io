@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="yes">
+        <meta name="description" content="An aDOORable company is a Russian manufacturer located in Saint-Petersburg. We produce doors, timber, plywood, particleboards, jambs and other wooden products.">
+        <meta name="keywords" content="doors, timber, plywood, particleboards, jambs, wooden products, wood, Russian, manufacturer, Saint-Petersburg">
+        <title>aDOORable</title>
+        <link rel="shortcut icon" href=
+              'src/img/favicon.ico' type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
+        <link rel="stylesheet" href='src/fonts.css'>
+        <link rel="stylesheet" href='src/jquery-ui.min.css'>
+        <link rel="stylesheet" href='src/jquery-ui.structure.min.css'>
+        <link rel="stylesheet" href='src/jquery-ui.theme.min.css'>
+        <link rel="stylesheet" href='slick-1.6.0/slick/slick-theme.css'>
+        <link rel="stylesheet" href="build/css/style.css">
+        <link rel="stylesheet" href='font-awesome-4.7.0/css/font-awesome.min.css'>
+    </head>
+    <body>
+
+        <section class="header">
+            <div class="logo-info">
+                <div class="logo-inner">
+                    <p class="logo-name">aDOORable</p>
+                    <div onclick="window.location.href='index.html'" class="blick1"></div>
+                </div>
+                <h1 class="logo-text">we make <span class='logo-span'>not only</span> doors</h1>
+            </div>
+            <div class="lang">
+                <a class='other-lang' id='turk' href='turkInd.html'>
+                    <img src="src/img/turk.png" title='&#84;&#252;&#114;&#107;' class="lang-flag">
+                </a>
+
+                <a class='other-lang' id='arab' href='arabInd.html'>
+                    <img src="src/img/arab.png" title='&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;' class="lang-flag">
+                </a>
+            </div>
+            <div id='divMenu' class="main-menu">
+                <ul class="main-menu__list">
+                    <li id='mainMenu' ><a href='#'>m&emsp;e&emsp;n&emsp;u</a></li>
+                    <li  class="main-menu__list-item"><a id='menu-doors' href='#'>doors</a></li>
+                    <li class="main-menu__list-item"><a id='menu-jambs' href='#'>jambs</a></li>
+                    <li class="main-menu__list-item"><a id='menu-plywood' href='#'>plywood</a></li>
+                    <li class="main-menu__list-item"><a id='menu-particleboard' href='#'>particleboard</a></li>
+                    <li class="main-menu__list-item"><a id='menu-timber' href='#'>timber</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class='accordion-string'>
+                <marquee class="accordion-string-line">
+                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>Please click a tick to add a product to the draft order below. Having completed the order sent it to us. We will calculate it and send you a quotation taking into account the quantity and discounts.<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                </marquee>
+            </div>
+            <div class="main-content__saying">
+                <p>Be careful when you open your doors to let someone come into your home; by doing that you let that person come into your life...</p>
+                <p class='em'>(an extraction from our doors' manual)</p>
+            </div>
+
+            <div class="carousel">
+                <div class="Bigslide">
+                    <div class="img"><img src='src/img/door.jpg' alt="Our Doors"></div>
+                    <div class="img"><img src='src/img/fanera.jpg' alt="Our Plywood"></div>
+                    <div class="img"><img src='src/img/jambs.jpg' alt="Our Jambs"></div>
+                    <div class="img"><img src='src/img/dsp.jpg' alt="Our Particleboard"></div>
+                    <div class="img"><img src='src/img/timber.jpg' alt="Our Timber"></div>
+                </div>
+                <div class="Smallslide">
+                    <div class="img"><img src='src/img/door.jpg' alt="Our Doors"></div>
+                    <div class="img"><img src='src/img/fanera.jpg' alt="Our Plywood"></div>
+                    <div class="img"><img src='src/img/jambs.jpg' alt="Our Jambs"></div>
+                    <div class="img"><img src='src/img/dsp.jpg' alt="Our Particleboard"></div>
+                    <div class="img"><img src='src/img/timber.jpg' alt="Our Timber"></div>
+                </div>
+            </div>
+
+            <div id="doors" class="tabs-div">
+
+                <div class='accordion' id='accordion'>
+                    <h3 class="accord-heading">1 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">2 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">3 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">4 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">5 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">6 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">7 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">8 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">9 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">10 door</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/door.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a  href='doors price-list.doc' class="tabs-li__download">download a catalogue</a>
+            </div>
+            <div id="jambs" class="tabs-div">
+                <div class='accordion' id='accordion'>
+                    <h3 class="accord-heading">1 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">2 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">3 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">4 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">5 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">6 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">7 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">8 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">9 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner" >
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">10 jambs</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/jambs.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href='jambs price-list.doc' class="tabs-li__download">download a catalogue</a>
+            </div>
+            <div id="plywood" class="tabs-div">
+                <div class='accordion' id='accordion'>
+                    <h3 class="accord-heading">1 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">2 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">3 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">4 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">5 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">6 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">7 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">8 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">9 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">10 plywood</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/fanera.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href='plywood price-list.doc' class="tabs-li__download">download a catalogue</a>
+            </div>
+            <div id="particleboard" class="tabs-div">
+                <div class='accordion' id='accordion'>
+                    <h3 class="accord-heading">1 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">2 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">3 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">4 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner" >
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">5 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">6 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">7 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">8 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">9 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">10 particleboard</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/dsp.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href='particleboard price-list.doc' class="tabs-li__download">download a catalogue</a>
+            </div>
+            <div id="timber" class="tabs-div">
+                <div class='accordion' id='accordion'>
+                    <h3 class="accord-heading">1 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">2 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">3 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">4 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">5 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">6 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">7 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">8 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">9 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="accord-heading">10 timber</h3>
+                    <div class='accord-inner'>
+                        <img src='src/img/timber.jpg' alt="Our Doors">
+                        <p class="accord-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam.</p>
+                        <div class="accord-button">
+                            <div class="accord-btn-icon" title='add this product to the order'><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <div class="accord-btn-inner">
+                                <span class="accord-btn-text-upper">add to the</span>
+                                <span class="accord-btn-text-lower">order</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href='timber price-list.doc' class="tabs-li__download">download a catalogue</a>
+            </div>
+            <div class="order" id="order">
+                <h3 class="order-header">your draft order</h3>
+                <p class="order-text">Please click a tick from the left to add a product to this draft order. <br>Having completed the  order sent it to us. <br>We will calculate it and send you back a quotation taking into account the quantity and discounts.<br> Thank you &hearts;</p>
+                <p class="order-mobile-prompt">
+                    ... products you will tick will appear here
+                </p>
+                <div class="order-send-div">
+                    <form action="#" class="sendOrderAddress">
+                        <label><input class='email' name="email" type="text" maxlength="30" placeholder="Your e-mail please..."></label>
+                        <span class="order-send">send the order</span>
+                    </form>
+                </div>
+            </div>
+            <div class="order-form">
+                <form class="formOrder" method="post" action="#" name="formOrder">
+                    <div class="article-inner">
+                        <p class="product-article">Product article</p>
+                        <label><input class='article' cols='10' name="article" disabled size="11" type="text"></label> 
+                    </div>
+                    <div class="quantuty-inner">
+                        <p class="product-quantity">Product quantity</p>
+                        <label><input class='quantity' cols='10' name="quantity" autofocus type="text" maxlength='5' size="5"></label>
+                    </div>
+                    <span class="order-delete" title="remove this product from the order"><i class="fa fa-trash-o" aria-hidden="true" ></i></span>
+                </form>
+            </div>
+            <p class="order-announce">
+                Oops.... you have already added this product to your draft order. So, please, choose another one.
+            </p>
+        </section>
+
+        <section class="footer">
+            <div class="footer-large">
+                <div class="aboutUs">
+                    <p>   
+                        <a href="#" class="aboutUs-text usual">
+                            <i class="fa fa-book" aria-hidden="true"></i>About us
+                        </a>
+                    </p>
+                </div>
+                <p class='footer__vertical'>&brvbar;</p>
+                <div class="ContactUs">
+                    <p>   
+                        <a href="#" class="ContactUs-text usual">
+                            <i class="fa fa-phone" aria-hidden="true"></i>Contact us
+                        </a>
+                    </p>
+                </div>
+                <p class='footer__vertical'>&brvbar;</p>
+                <div class="sendEmail">
+                    <p>   
+                        <a href="message_form.html" class="aboutUs-text usual">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>Send a Message
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-min">
+                <i id='burger' class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+
+            <!--это типа окно About Us DIALOG()-->
+            <div title='About us' id='aboutUs'>
+                <p class="abouUs-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nam quibusdam numquam, tenetur animi sunt iste soluta vitae atque, porro et officiis ipsam, enim a inventore itaque at necessitatibus aperiam!</p>
+            </div>
+
+            <!--это типа окно Contact Us DIALOG()-->
+            <div title='Contact us' id="contactUs">
+                <p class='address-text'><span>Address:<br></span>Russian Federation, Saint-Petersburg, Avtovskaya street, 10</p>
+                <p class="email-inner"><span>
+                    E-mail:<br></span>adoorable@gmail.com</p>
+                <p class="phone-inner"><span>Phone number in Russia:<br></span>+7-10-812-000-00-00</p>
+            </div>
+
+        </section>
+
+        <script src='src/js/jquery-3.1.0.js'></script>
+        <script src='src/js/NJS.js'></script>
+        <script src="src/js/script.js"></script>
+        <script src="src/js/jquery-ui.min.js"></script>
+        <script src="src/js/slick.min.js"></script>
+    </body>
+</html>
