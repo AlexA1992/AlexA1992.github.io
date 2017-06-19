@@ -1,7 +1,218 @@
 $(document).ready(function(){
 
+    //это отправка предварительного заказа
+    $("#order").on("click", ".order-send", function(){
+        var empty = 1;
+        $('.new-order-form').each(function(){
+            var quant = $(this).find('.quantity').val();
+            if (quant==''){
+                empty=0;
+            }
+
+        })
+        if (empty==1){
+            checkEmail();
+        }
+        else{
+            $('#emptyField').dialog({
+                buttons: [{text: "ОК", click: function() {$(this).dialog("close")}}],
+                modal:true,
+                show:{
+                    effect:'drop',
+                    duration:500,
+                    easing:"easeOutBounce"
+                },
+                hide:{
+                    effect:'drop',
+                    duration:300,
+                    delay:100
+                }
+            }); 
+        }
+        //alert(empty);
+    })
+   
+    function checkEmail(){
+        if($('#order').find('#email').val()=='')
+        {
+            $('#mistakeEmail').dialog({
+                buttons: [{text: "ОК", click: function() {$(this).dialog("close")}}],
+                modal:true,
+                show:{
+                    effect:'drop',
+                    duration:500,
+                    easing:"easeOutBounce"
+                },
+                hide:{
+                    effect:'drop',
+                    duration:300,
+                    delay:100
+                }
+            });         
+            $('#email').css({'borderColor':'red','background':'linear-gradient(to bottom, white 0%, pink 100%)'});
+        }
+
+        else if($('#order').find('#email').val().indexOf('@')+1 <= 0 || $('#order').find('#email').val().indexOf('.')+1 <= 0)
+        {
+            $('#wrongEmail').dialog({
+                buttons: [{text: "ОК", click: function() {$(this).dialog("close")}}],
+                modal:true,
+                show:{
+                    effect:'drop',
+                    duration:500,
+                    easing:"easeOutBounce"
+                },
+                hide:{
+                    effect:'drop',
+                    duration:300,
+                    delay:100
+                }
+            });         
+            $('#email').css({'borderColor':'red','background':'linear-gradient(to bottom, white 0%, pink 100%)'});
+        }
+        else {
+            var email = $('#order').find('#email').val();
+            //alert(email);
+            var massiv = [];
+            $('.new-order-form').each(function(){
+                massiv.push($(this).find('.article').val());
+                massiv.push('-');
+                massiv.push($(this).find('.quantity').val());
+                massiv.push(';');
+                massiv.push('\n');
+                return massiv;
+            });
+            var strokaTovarov = massiv.join(' ');
+            strokaTovarov = strokaTovarov.replace(/\,/g, '\s');
+            $('#forma-preliminaryOrder').find('#form-email').val(email);
+            $('#forma-preliminaryOrder').find('#form-order').val(strokaTovarov);
+            $('#forma-preliminaryOrder').find('#PreliminaryOrder').submit();
+            $('#orderSent').dialog({
+                modal:true,
+                show:{
+                    effect:'drop',
+                    duration:500,
+                    easing:"easeOutBounce"
+                },
+                hide:{
+                    effect:'drop',
+                    duration:300,
+                    delay:100
+                }
+            });    
+        }
+    }
+   
+
+    // это вызов формы заказа обратного звонка
+    $('#call').click(function(){
+        $('#wantCall').dialog(
+            {
+                position:{
+                    my:'left bottom',
+                    at:'right center'
+                },
+                show:{
+                    effect:'drop',
+                    duration:500,
+                    easing:"easeOutBounce"
+                },
+                hide:{
+                    effect:'drop',
+                    duration:300,
+                    delay:100
+                }  
+            });
+    });
+
+
+    //это обработка данных формы перед пересылкой данных в PHP-файл
+    $('#call-form').submit(function(){
+
+        if ($('#call-name').val()==''){
+            $('#nameError').dialog({
+                buttons: [{text: "ОК", click: function() {$(this).dialog("close")}}],
+                modal:true,
+                show:{
+                    effect:'drop',
+                    duration:500,
+                    easing:"easeOutBounce"
+                },
+                hide:{
+                    effect:'drop',
+                    duration:300,
+                    delay:100
+                }
+            }
+                                  );         
+            $('#call-name').css({'borderColor':'yellow','background':'linear-gradient(to bottom, white 0%, lightgrey 100%)'});
+            event.preventDefault();
+        }
+        else if ($('#call-number').val()==''){
+            $('#phoneError').dialog({
+                buttons: [{text: "ОК", click: function() {$(this).dialog("close")}}],
+                modal:true,
+                show:{
+                    effect:'drop',
+                    duration:500,
+                    easing:"easeOutBounce"
+                },
+                hide:{
+                    effect:'drop',
+                    duration:300,
+                    delay:100
+                }
+            });       
+            $('#call-number').css({'borderColor':'yellow','background':'linear-gradient(to bottom, white 0%, lightgrey 100%)'});
+            event.preventDefault();
+        }
+        else 
+        {
+            $('#promiseMessage').dialog({
+                modal:true,
+                show:{
+                    effect:'drop',
+                    duration:500,
+                    easing:"easeOutBounce"
+                },
+                hide:{
+                    effect:'drop',
+                    duration:300,
+                    delay:100
+                }
+            });
+        }
+    });
+
+
+    // сделать галочку добавления товара белой при наведении мышки
+    $('.accord-btn-icon').mouseover(function(){
+        $('.fa-check').css('color','white');
+    });
+
+    $('.accord-btn-icon').mouseout(function(){
+        $('.fa-check').css('color','darkgreen');
+    });
+
+
     //подсказки
     $('[title]').tooltip({
+
+        show:{
+            effect:'drop',
+            duration:500,
+            easing:"easeOutBounce",
+        },
+
+        hide:{
+            effect:'drop',
+            duration:300,
+            delay:100
+        },
+        position:{
+            my:'left top',
+            at:'right bottom'
+        }
     });
 
     //увеличение картинки товара при наведении мышки
@@ -53,6 +264,16 @@ $(document).ready(function(){
         }
         $('.order-send-div').css('display', 'block');
         $('[title]').tooltip({
+            show:{
+                effect:'drop',
+                duration:500,
+                easing:"easeOutBounce"
+            },
+            hide:{
+                effect:'drop',
+                duration:300,
+                delay:100
+            }
         });
     });
 
@@ -79,9 +300,8 @@ $(document).ready(function(){
 
     //это изменение IMG у логотипа при большом экране
     var width = $(document).width();
-    //alert(width);
+    
     if (width>=768){
-        //alert(width);
         $('.logoImg').attr('src','src/img/logoBig.png');
     };
 
@@ -105,7 +325,7 @@ $(document).ready(function(){
             $('.order-text').remove();
             $('.order-mobile-prompt').css('display','block');
         };
-        
+
         if ($(document).width()>='811'){
             $('#order').css('display','block');
         };
@@ -227,7 +447,7 @@ $(document).ready(function(){
             $('.footer-large').css('display','none');
         };
         $('#contactUs').dialog({
-            buttons: [{text: "ОК", click: function() {$(this).dialog("close")}}],
+            buttons: [{text: "ОКМы ", click: function() {$(this).dialog("close")}}],
             modal:true,
             show:'drop',
             hide:'drop'            
@@ -255,4 +475,4 @@ $(document).ready(function(){
         arrows: false,
         autoHeight:true
     });
-});
+})

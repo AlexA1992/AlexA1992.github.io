@@ -1,0 +1,70 @@
+#wantCall {
+    display: none;
+    //z-index: 10000;
+    #call-form {
+        font-family: @font-family;
+        color: whitesmoke;
+        //z-index: 10000;
+        .name-text {
+            font-family: @font-family;
+            color: whitesmoke;
+            input{
+                padding-left: 2px;
+                font-family: @font-family;
+                color:saddlebrown;
+                font-weight: 800;
+                clear:left;
+            }
+        }
+        .phone-text {
+            font-family: @font-family;
+            color: whitesmoke;
+            //z-index: 10000;
+            input{
+                padding-left: 2px;
+                font-family: @font-family;
+                color:saddlebrown;
+                font-weight: 800;
+                clear:left;
+            }
+            #call-number {
+                //padding-left: 2px;
+                font-family: @font-family;
+                color:saddlebrown;
+                //font-size: 13px;
+            }
+        }
+        #submit {
+            width:100px;
+            height:40px;
+            font-family: @font-family;
+            font-size: 18px;
+            font-weight: 800;
+            border-width: 1px;
+            border-color:white;
+            cursor:pointer;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, palegreen 0%, darkgreen 100%);
+            color:aliceblue;
+
+            &:hover{
+                background: linear-gradient(to bottom, yellow 0%, orange 100%);
+                color:saddlebrown;
+            }
+        }
+    }
+}
+
+#promiseMessage {
+    display: none;
+    .promise-text {
+        font-family: @font-family;
+        color: whitesmoke;
+    }
+}
+#nameError {
+    display: none;
+}
+#phoneError {
+    display: none;
+}

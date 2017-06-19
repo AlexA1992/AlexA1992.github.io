@@ -1,13 +1,14 @@
 .logo-info {
-    //display: block;
-    display: -webkit-inline-flex;
-    display: -moz-inline-flex;
-    display: -ms-inline-flex;
-    display: -o-inline-flex;
-    display: inline-flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-content: center;
+    min-height:80px;
+    position: relative;
+    //display: -webkit-flex;
+    //display: -moz-flex;
+    //display: -ms-flex;
+    //display: -o-flex;
+    //display: flex;
+    //justify-content: left;
+    //flex-direction: row;
+    //align-content: center;
     margin: 0 auto;
     color: red;
     @media screen and (min-width:481px){
@@ -18,7 +19,7 @@
     .logo-inner{
         box-shadow: 0 0 15px white;
         margin-top: 10px;
-        align-items: center;
+        float: left;
         margin-left: 5px;
         overflow: hidden;
         width:115px;
@@ -75,6 +76,8 @@
     }
 
     .logo-text {
+        display: inline-block;
+        float: left;
         margin-left:5px;
         line-height: 80px;
         font-family: 'Ceviche One', cursive;
@@ -89,60 +92,77 @@
             font-size: @header-logo-name-font-size-768;  
         }
         .logo-span {
-            color:red;
+            color:white;
             font-size: 12px;
             font-weight: 600;
             font-family: "CleanvertisingLight";
             @media screen and (min-width:481px){
                 position: relative;
                 bottom:1px;
-                color:red;
+                //color:red;
                 font-size: 16px;
             }
             @media screen and (min-width:768px){
-                color:red;
+                //color:red;
                 font-size: 18px;
             }
         }
     }
-}
-.lang {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top:5px;
-    right:10px;
+    .buttons {
+        //display: -webkit-flex;
+        //display: -moz-flex;
+        //display: -ms-flex;
+        //display: -o-flex;
+        //display: flex;
+        //flex-direction: column;
 
-    .other-lang{
-        box-sizing:border-box;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        width: 25px;
-        height: 25px;
-        border-radius: 50% 50%;
-        @media screen and (min-width:481px){
-            margin-top: 5px;
-            margin-bottom: 5px;    
-            width: 35px;
-            height: 35px;
-        }
-        &:hover{
-            box-shadow: -5px 5px 10px green;
-        }
-        img {
+        position: absolute;
+        top:-12px;
+        right:6px;
+
+
+        .lang{
+            display: block;
+            box-sizing:border-box;
+            margin-top: 0px;
+            margin-bottom: 2px;
             width: 25px;
             height: 25px;
+            border-radius: 50% 50%;
             @media screen and (min-width:481px){
+                margin-top: 5px;
+                margin-bottom: 5px;    
                 width: 35px;
                 height: 35px;
             }
-        }  
+            &:hover{
+                box-shadow: -5px 5px 10px green;
+            }
+            img {
+                width: 25px;
+                height: 25px;
+                @media screen and (min-width:481px){
+                    width: 35px;
+                    height: 35px;
+                }
+            }  
+        }
+        .callBlock{
+            transform: scale(0.8)!important;
+            .call {
+                position:relative; 
+                top:12px;
+
+                .fa-phone-square{
+                    display:inline-block;
+                    color: white;
+                    
+                }
+            }
+        }
     }
 }
+
 .letter0 {
     color: red;
 }
@@ -179,8 +199,8 @@
 .letter4 {
     color: red;
     position: relative;
-    animation-duration: 3s;
-    -webkit-animation-duration:3s;
+    animation-duration: 5s;
+    -webkit-animation-duration:5s;
     //animation-delay: 4s;
     animation-name:letter4;
     -webkit-animation-name:letter4;
@@ -190,6 +210,8 @@
     -webkit-animation-iteration-count:infinite;
     animation-direction:alternate;
     -webkit-animation-direction:alternate;
+    transition-timing-function:ease-in;
+    -webkit-transition-timing-function:ease-in;
 }
 .letter5 {
     color: red;
@@ -240,5 +262,4 @@
 
     to {left:-150px;}
 }
-
 

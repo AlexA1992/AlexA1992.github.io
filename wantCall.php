@@ -14,16 +14,16 @@ $mail->From='aarondelporto@gmail.com';
 $mail->addAddress('aarondelporto@gmail.com');
 $mail->isHTML(true);
 
-$name=$_POST['name'];
-$email=$_POST['email'];
-$textArea=$_POST['textArea'];
+$name=$_POST['call-name'];
+$number=$_POST['call-number'];
+
 
 $mail->Subject=$name;
-$mail->Body=$email." "." ".$textArea;
+$mail->Body=$number;
 
 //$mail->AltBody='Это альтернативное письмо';
 if($mail->send()){
-    sleep ( 6 );
+    sleep ( 2 );
     header('Location:index.html', true, 301);
     exit();
 }

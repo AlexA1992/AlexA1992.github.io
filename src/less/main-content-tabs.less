@@ -37,29 +37,51 @@
         color: #07684e;
     }
     .tabs-li__download {
-        border-radius: 15px 5px;
-        font-size: 14px;
-        font-weight: 600;
-        box-shadow: 5px 5px 10px green;
-        color: #0f422d;
-        padding-left:3px;
-        padding-right:3px;
-        width:130px;
-        height:35px;
         line-height: 35px;
-        text-decoration:none;
-        text-align:center;
-        margin: 20px 5px;
-        clear: both;
-        display: block;
-        background-image: linear-gradient(to left,transparent,transparent 0%,#0f422d 90%,#0f422d);
+        display: inline-block;
+        margin: 10px auto;
+        //margin-top: 20px;
+        border-radius: 10px;
+        background:linear-gradient(to bottom, darkgreen 0%,  green 50%, darkgreen 100%);
+        box-shadow:
+            0 6px green,
+            0 3px 15px rgba(0,0,0,.4),
+            inset 0 1px rgba(255,255,255,.3),
+            inset 0 0 3px rgba(255,255,255,.5);
+        transition: .2s;
+        color: white;
+        width:170px;
+        height:35px;
+        font-family: "CleanvertisingLight";
+        font-size: 15px;
+        text-transform: lowercase;
+        font-weight: 800;
+        text-align: center;
         background-position: 99% 0;
         background-size: 199% 99%;
-        transition: all .3s ease-in;
-        border: 1px solid #0f422d;
+        border: 1px solid #769c8c;
+        text-decoration: none;
         &:hover{
+            text-decoration: underline;
             background-position: 0 0;
             color:#fff;
+            cursor: pointer;
+            background:linear-gradient(to bottom, green 0%,  darkgreen 50%, green 100%);
+            text-transform: lowercase;
+            //letter-spacing: 4px;
+            font-weight: 900;
+        }
+        &:active{
+            background:linear-gradient(to bottom, green 0%,  darkgreen 50%, green 100%);
+            box-shadow:
+                0 2px green,
+                0 1px 16px rgba(0,0,0,.4),
+                inset 0 1px rgba(255,255,255,.3),
+                inset 0 0 3px rgba(255,255,255,.5);
+            -webkit-transform: translate(2px, 4px);
+            transform: translate(1px, 4px);
+            font-weight: 900;
+            color:white;
         }
     }
 }
