@@ -31,7 +31,7 @@ $(document).ready(function(){
         }
         //alert(empty);
     })
-   
+
     function checkEmail(){
         if($('#order').find('#email').val()=='')
         {
@@ -102,7 +102,7 @@ $(document).ready(function(){
             });    
         }
     }
-   
+
 
     // это вызов формы заказа обратного звонка
     $('#call').click(function(){
@@ -123,7 +123,9 @@ $(document).ready(function(){
                     delay:100
                 }  
             });
-    });
+        
+    })
+
 
 
     //это обработка данных формы перед пересылкой данных в PHP-файл
@@ -300,7 +302,7 @@ $(document).ready(function(){
 
     //это изменение IMG у логотипа при большом экране
     var width = $(document).width();
-    
+
     if (width>=768){
         $('.logoImg').attr('src','src/img/logoBig.png');
     };
@@ -309,7 +311,7 @@ $(document).ready(function(){
     $('#menu-doors').click(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
-        if ($(document).width()<='768'){
+        if ($(document).width()<='481'){
             $('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
@@ -335,7 +337,7 @@ $(document).ready(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
         if ($(document).width()<='768'){
-            $('.main-menu__list-item').css('display','none');
+            //$('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
         $('#jambs').css('display','block');
@@ -359,7 +361,7 @@ $(document).ready(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
         if ($(document).width()<='768'){
-            $('.main-menu__list-item').css('display','none');
+            //$('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
         $('#plywood').css('display','block');
@@ -383,7 +385,7 @@ $(document).ready(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
         if ($(document).width()<='768'){
-            $('.main-menu__list-item').css('display','none');
+            //$('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
         $('#particleboard').css('display','block');
@@ -407,7 +409,7 @@ $(document).ready(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
         if ($(document).width()<='768'){
-            $('.main-menu__list-item').css('display','none');
+            //$('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
         $('#timber').css('display','block');
@@ -447,7 +449,7 @@ $(document).ready(function(){
             $('.footer-large').css('display','none');
         };
         $('#contactUs').dialog({
-            buttons: [{text: "ОКМы ", click: function() {$(this).dialog("close")}}],
+            buttons: [{text: "ОК", click: function() {$(this).dialog("close")}}],
             modal:true,
             show:'drop',
             hide:'drop'            
