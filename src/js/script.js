@@ -336,8 +336,8 @@ $(document).ready(function(){
     $('#menu-jambs').click(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
-        if ($(document).width()<='768'){
-            //$('.main-menu__list-item').css('display','none');
+        if ($(document).width()<='481'){
+            $('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
         $('#jambs').css('display','block');
@@ -360,8 +360,8 @@ $(document).ready(function(){
     $('#menu-plywood').click(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
-        if ($(document).width()<='768'){
-            //$('.main-menu__list-item').css('display','none');
+        if ($(document).width()<='481'){
+            $('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
         $('#plywood').css('display','block');
@@ -384,8 +384,8 @@ $(document).ready(function(){
     $('#menu-particleboard').click(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
-        if ($(document).width()<='768'){
-            //$('.main-menu__list-item').css('display','none');
+        if ($(document).width()<='481'){
+            $('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
         $('#particleboard').css('display','block');
@@ -408,8 +408,8 @@ $(document).ready(function(){
     $('#menu-timber').click(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
-        if ($(document).width()<='768'){
-            //$('.main-menu__list-item').css('display','none');
+        if ($(document).width()<='481'){
+            $('.main-menu__list-item').css('display','none');
         };
         $('.main-content').css('padding-top','0');
         $('#timber').css('display','block');
