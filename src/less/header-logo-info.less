@@ -93,33 +93,30 @@
         }
         .logo-span {
             color:white;
-            font-size: 12px;
+            font-size: @header-logo-name-font-size-480;
             font-weight: 600;
-            font-family: "CleanvertisingLight";
+            font-family: 'Ceviche One', cursive;
             @media screen and (min-width:481px){
-                position: relative;
-                bottom:1px;
+                //position: relative;
+                //bottom:1px;
                 //color:red;
-                font-size: 16px;
+                @header-logo-name-font-size-481;
             }
             @media screen and (min-width:768px){
                 //color:red;
-                font-size: 18px;
+                font-size: @header-logo-name-font-size-768;
             }
         }
     }
     .buttons {
-        //display: -webkit-flex;
-        //display: -moz-flex;
-        //display: -ms-flex;
-        //display: -o-flex;
-        //display: flex;
-        //flex-direction: column;
-
         position: absolute;
-        top:-12px;
+        top:5px;
         right:6px;
-
+        @media screen and (min-width:481px){
+            position: absolute;
+            top:-9px;
+            right:6px;
+        }
 
         .lang{
             display: block;
@@ -138,7 +135,7 @@
             &:hover{
                 box-shadow: -5px 5px 10px green;
             }
-            img {
+            .lang-flag {
                 width: 25px;
                 height: 25px;
                 @media screen and (min-width:481px){
@@ -156,7 +153,7 @@
                 .fa-phone-square{
                     display:inline-block;
                     color: white;
-                    
+
                 }
             }
         }
