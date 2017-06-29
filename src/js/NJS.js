@@ -35,14 +35,18 @@ burger.onclick = function() {
         usual[0].style.paddingRight='10px';
         usual[1].style.paddingRight='10px';
         usual[2].style.paddingRight='10px';
+        
+        usual[0].style.paddingLeft='10px';
+        usual[1].style.paddingLeft='10px';
+        usual[2].style.paddingLeft='10px';
 
         usual[0].style.textTransform='uppercase';
         usual[1].style.textTransform='uppercase';
         usual[2].style.textTransform='uppercase';
 
-        fa[0].style.padding='0 10px';
-        fa[1].style.padding='0 10px';
-        fa[2].style.padding='0 10px';
+        fa[0].style.paddingRight='10px';
+        fa[1].style.paddingRight='10px';
+        fa[2].style.paddingRight='10px';
 
         footerVertical[0].style.display='none';
         footerVertical[1].style.display='none';
