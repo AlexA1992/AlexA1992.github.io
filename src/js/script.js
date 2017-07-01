@@ -316,7 +316,7 @@ $(document).ready(function(){
         };
         $('.main-content').css('padding-top','0');
         $('#doors').css('display','block');
-        if ($(document).width()>='481' /*&& $(document).width()<='810'*/ && $('#order').css('display')!='block'){
+        if ($(document).width()>='481' && $(document).width()<='810' && $('#order').css('display')!='block'){
             $('.main-menu__list-item').css('display','none');
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
@@ -328,7 +328,7 @@ $(document).ready(function(){
             $('.order-text').remove();
             $('.order-mobile-prompt').css('display','block');
         };
-
+/*
         if ($(document).width()>='811'){
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
@@ -339,7 +339,7 @@ $(document).ready(function(){
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
             //$('.order-mobile-prompt').css('display','block');
-        };
+        };*/
     });
 
     $('#menu-jambs').click(function(){
@@ -360,9 +360,9 @@ $(document).ready(function(){
             $('#order').css('min-width','90%');
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
-            //$('.order-mobile-prompt').css('display','block');
+            $('.order-mobile-prompt').css('display','block');
         };
-
+/*
         if ($(document).width()>='811'){
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
@@ -373,7 +373,7 @@ $(document).ready(function(){
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
             //$('.order-mobile-prompt').css('display','block');
-        };
+        };*/
     });
 
     $('#menu-plywood').click(function(){
@@ -394,9 +394,9 @@ $(document).ready(function(){
             $('#order').css('min-width','90%');
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
-            //$('.order-mobile-prompt').css('display','block');
+            $('.order-mobile-prompt').css('display','block');
         };
-
+/*
         if ($(document).width()>='811'){
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
@@ -407,7 +407,7 @@ $(document).ready(function(){
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
             //$('.order-mobile-prompt').css('display','block');
-        };
+        };*/
     });
 
     $('#menu-particleboard').click(function(){
@@ -428,9 +428,9 @@ $(document).ready(function(){
             $('#order').css('min-width','90%');
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
-            //$('.order-mobile-prompt').css('display','block');
+            $('.order-mobile-prompt').css('display','block');
         };
-
+/*
         if ($(document).width()>='811'){
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
@@ -441,7 +441,7 @@ $(document).ready(function(){
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
             //$('.order-mobile-prompt').css('display','block');
-        };
+        };*/
     });
 
     $('#menu-timber').click(function(){
@@ -462,9 +462,9 @@ $(document).ready(function(){
             $('#order').css('min-width','90%');
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
-            //$('.order-mobile-prompt').css('display','block');
+            $('.order-mobile-prompt').css('display','block');
         };
-
+/*
         if ($(document).width()>='811'){
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
@@ -475,7 +475,7 @@ $(document).ready(function(){
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
             //$('.order-mobile-prompt').css('display','block');
-        };
+        };*/
     });
 
     // это управление диалоговым окном About Us
