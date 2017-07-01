@@ -328,7 +328,7 @@ $(document).ready(function(){
             $('.order-text').remove();
             $('.order-mobile-prompt').css('display','block');
         };
-/*
+
         if ($(document).width()>='811'){
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
@@ -339,9 +339,9 @@ $(document).ready(function(){
             $('#doors').css('min-width','90%');
             $('.order-text').remove();
             //$('.order-mobile-prompt').css('display','block');
-        };*/
+        };
     });
-/*
+
     $('#menu-jambs').click(function(){
         var kids = $('.main-content').children();
         kids.css('display','none');
@@ -351,7 +351,7 @@ $(document).ready(function(){
         $('.main-content').css('padding-top','0');
         $('#jambs').css('display','block');
         if ($(document).width()>='481' && $(document).width()<='810' && $('#order').css('display')!='block'){
-            //$('.main-menu__list-item').css('display','none');
+            $('.main-menu__list-item').css('display','none');
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
             $('.main-content').css('flex-direction','column');
@@ -385,7 +385,7 @@ $(document).ready(function(){
         $('.main-content').css('padding-top','0');
         $('#plywood').css('display','block');
         if ($(document).width()>='481' && $(document).width()<='810' && $('#order').css('display')!='block'){
-            //$('.main-menu__list-item').css('display','none');
+            $('.main-menu__list-item').css('display','none');
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
             $('.main-content').css('flex-direction','column');
@@ -419,7 +419,7 @@ $(document).ready(function(){
         $('.main-content').css('padding-top','0');
         $('#particleboard').css('display','block');
         if ($(document).width()>='481' && $(document).width()<='810' && $('#order').css('display')!='block'){
-            //$('.main-menu__list-item').css('display','none');
+            $('.main-menu__list-item').css('display','none');
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
             $('.main-content').css('flex-direction','column');
@@ -453,7 +453,7 @@ $(document).ready(function(){
         $('.main-content').css('padding-top','0');
         $('#timber').css('display','block');
         if ($(document).width()>='481' && $(document).width()<='810' && $('#order').css('display')!='block'){
-            //$('.main-menu__list-item').css('display','none');
+            $('.main-menu__list-item').css('display','none');
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
             $('.main-content').css('flex-direction','column');
@@ -477,7 +477,7 @@ $(document).ready(function(){
             //$('.order-mobile-prompt').css('display','block');
         };
     });
-*/
+
     // это управление диалоговым окном About Us
     $('.aboutUs').click(function(){
 
