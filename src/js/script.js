@@ -317,7 +317,7 @@ $(document).ready(function(){
         $('.main-content').css('padding-top','0');
         $('#doors').css('display','block');
         if ($(document).width()>='481' /*&& $(document).width()<='810'*/ && $('#order').css('display')!='block'){
-            //$('.main-menu__list-item').css('display','none');
+            $('.main-menu__list-item').css('display','none');
             $('#accordion-string').css('display','block');
             $('.tabs-div').css('padding-top','0');
             $('.main-content').css('flex-direction','column');
